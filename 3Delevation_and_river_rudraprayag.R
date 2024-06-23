@@ -28,16 +28,16 @@ country_sf <- read_sf("C:/Users/KanwalNayan.Singh/Desktop/Codes/R/New_maps/3D_El
 # 3. DOWNLOAD RIVERS
 #-------------------
 
-# url <- "https://data.hydrosheds.org/file/HydroRIVERS/HydroRIVERS_v10_eu_shp.zip"
-# destfile <- basename(url)
-# 
-# download.file(
-#   url = url,
-#   destfile = destfile,
-#   mode = "wb"
-# )
-# 
-# unzip(destfile)
+url <- "https://data.hydrosheds.org/file/HydroRIVERS/HydroRIVERS_v10_as_shp.zip"
+destfile <- basename(url)
+ 
+download.file(
+  url = url,
+  destfile = destfile,
+  mode = "wb"
+)
+ 
+unzip(destfile)
 
 # 4. LOAD RIVERS
 #---------------
